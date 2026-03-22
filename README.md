@@ -6,7 +6,7 @@ Audit any product design portfolio website against what top design leaders actua
 
 The rubric behind this skill was built by scraping and analyzing transcripts from 143 episodes of [Dive Club](https://www.dive.club) — a design podcast hosted by [Ridd](https://x.com/ridd_design) where he interviews design leaders from companies like Lovable, Duolingo, Stripe, Shopify, Perplexity, Anthropic, Ramp, Airbnb, Cash App, Linear, Discord, and Figma.
 
-We extracted every mention of portfolios, hiring, what makes candidates stand out, and what gets people rejected — then distilled it all into a scoring rubric. This isn't generic advice. It's what these specific people said they actually care about when reviewing portfolios.
+We extracted every mention of portfolios, hiring, what makes candidates stand out, and what gets people rejected, then distilled it all into a scoring rubric based on what these specific people said they actually care about when reviewing portfolios.
 
 ## What it does
 
@@ -125,4 +125,4 @@ No data is sent anywhere. Everything runs locally.
 
 ## Credits
 
-Built on top of [Dive Club](https://www.dive.club) by [Ridd](https://x.com/ridd_design). Go watch the episodes — they're great.
+Built on top of [Dive Club](https://www.dive.club) by [Ridd](https://x.com/ridd_design), go watch the episodes.
