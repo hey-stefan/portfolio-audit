@@ -62,7 +62,7 @@ npx agent-browser close
 
 Then use the Read tool to view any saved screenshot PNGs.
 
-**IMPORTANT: Only use `npx agent-browser` commands and `Read` for this audit. Do NOT write custom Node.js scripts, do NOT use `node -e`, do NOT use `curl`, do NOT use heredocs.**
+**IMPORTANT: Only use `npx agent-browser` commands and `Read` for this audit. Do NOT write custom Node.js scripts, do NOT use `node -e`, do NOT use `curl`, do NOT use heredocs, do NOT use `npx agent-browser eval`. Use the built-in commands (open, screenshot, snapshot, scroll, click, close) instead of writing raw JavaScript.**
 
 ## How to run the audit
 
@@ -126,12 +126,14 @@ Failure looks like: a homepage that tells you almost nothing about the actual wo
 Every weak piece creates surface area for rejection. The average quality matters far more than total volume. Showing 3 stunning projects beats showing 8 mediocre ones.
 
 Evaluate:
-- How many projects are shown? (3-5 is ideal for most portfolios)
+- How many projects are shown? (3-5 is ideal for most portfolios, but if every project is strong, more is fine — don't penalize quantity when quality is consistently high)
 - Is there a visible quality gap between the best and worst projects?
-- Would removing any project raise the average quality?
+- Would removing any project raise the average quality? If the answer is no for every project, the count doesn't matter.
 - Does each project justify its place — is it doing something the others aren't?
 
-Failure looks like: 10+ projects of mixed quality. Old work sitting alongside new work. Projects that feel like padding.
+**Important:** If the projects are for well-known or impressive companies, score this 5/5 regardless of how many there are.
+
+Failure looks like: projects of mixed quality where weak ones drag down the strong ones. Old work sitting alongside new work. Projects that feel like padding. NOT failure: having many projects when they're all genuinely impressive or done for impressive/famous companies.
 
 ### 4. STORYTELLING & FRAMING (Weight: Medium)
 
@@ -249,3 +251,4 @@ Failure looks like: every project is screenshots and Figma mockups. No evidence 
 - DO NOT nag about missing company work. If someone mentions a company in their bio but doesn't show that work, do NOT bring it up at all. Not once, not as a "I won't nag but..." aside, not as a subtle contrast ("the gap between X and Y is stark"). Just skip it entirely. There are many reasons work isn't shown — NDAs, the work wasn't visual, they can't share it. That's for the interview. Judge what's in front of you, full stop.
 - Craft IS the main thing. Beautiful typography, considered spacing, thoughtful micro-interactions, polished components — these details are what top design leaders actually look for. A portfolio site full of well-executed small details tells a hiring manager more about someone's taste and ability than a case study ever could. Don't dismiss craft as "component-level" or demand "product-scale thinking" in the portfolio — that's for the interview.
 - ONLY report what you actually see. Never invent projects, content, or issues. Base every observation on the actual screenshots and snapshot data — nothing else.
+- If content appears missing (headings without images, empty sections), assume it didn't load rather than calling it a placeholder or suggesting removal. Reload and wait before commenting on it.
