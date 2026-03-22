@@ -44,6 +44,12 @@ npx skills add hey-stefan/portfolio-audit
 
 Auto-detects your installed agents and installs to each. Works with Claude Code, Codex, OpenClaw, Cursor, Gemini CLI, Windsurf, OpenCode, and [35+ more](https://github.com/vercel-labs/skills).
 
+### Claude Code only
+
+```bash
+npx skills add hey-stefan/portfolio-audit -a claude-code
+```
+
 ### Manual install
 
 Copy `SKILL.md` into your agent's skills directory:
