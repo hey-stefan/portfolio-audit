@@ -72,7 +72,7 @@ git clone https://github.com/hey-stefan/portfolio-audit.git ~/.claude/skills/por
 
 ### Note
 
-The skill uses [agent-browser](https://github.com/microsoft/playwright-cli) to browse and screenshot sites. On first run, you may need to install the browser: `npx agent-browser install`
+The skill uses [agent-browser](https://agent-browser.dev/) to browse and screenshot sites. On first run, you may need to install the browser: `npx agent-browser install`
 
 ## Usage
 
