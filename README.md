@@ -72,7 +72,7 @@ git clone https://github.com/hey-stefan/portfolio-audit.git ~/.claude/skills/por
 
 ### Note
 
-The skill uses Playwright to browse and screenshot sites. If Playwright isn't installed, the skill will install it automatically on first run.
+The skill uses [agent-browser](https://github.com/microsoft/playwright-cli) to browse and screenshot sites. On first run, you may need to install the browser: `npx agent-browser install`
 
 ## Usage
 
@@ -114,13 +114,12 @@ The skill uses Playwright to browse and screenshot sites. If Playwright isn't in
 
 ## How it works under the hood
 
-The skill uses a small Playwright helper script that it creates at `/tmp/portfolio_scrape.js` on each run. This script:
+The skill uses `npx agent-browser` to browse portfolio sites like a real user:
 
-- Launches a headless Chromium browser
-- Navigates to the portfolio URL
-- Takes a viewport screenshot (above the fold) and a full-page screenshot
-- Extracts all visible text and links as JSON
-- Claude then reads the screenshots visually and the text data to perform the audit
+- Opens the site in a headless Chromium browser
+- Takes screenshots and reads the page structure
+- Scrolls through pages, clicks into case studies and internal links
+- Claude reads the screenshots visually and the page data to perform the audit
 
 No data is sent anywhere. Everything runs locally.
 
