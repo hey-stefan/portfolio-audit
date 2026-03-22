@@ -1,6 +1,6 @@
 # Portfolio Audit Skill
 
-Audit any design portfolio website against what top design leaders actually look for when hiring.
+Audit any product design portfolio website against what top design leaders actually look for when hiring.
 
 ## Where this comes from
 

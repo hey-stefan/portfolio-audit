@@ -1,7 +1,7 @@
 ---
 name: portfolio-audit
 description: Audit a design portfolio website against what top design leaders actually look for when hiring. Use with /portfolio-audit <url>.
-allowed-tools: Bash(cat > /tmp/portfolio_scrape.js*), Bash(NODE_PATH=*node /tmp/portfolio_scrape.js*), Bash(node -e*), Bash(npm install -g playwright*), Bash(npx playwright install*)
+allowed-tools: Bash(cat > /tmp/portfolio_scrape.js*), Bash(NODE_PATH=*), Bash(node -e*), Bash(npm install -g playwright*), Bash(npx playwright install*)
 ---
 
 # Portfolio Audit Skill
