@@ -25,15 +25,17 @@ npx agent-browser install
 npx agent-browser open "URL_HERE"
 ```
 
-**Take a screenshot:**
+**Take a screenshot (use a unique prefix based on the site name to avoid collisions):**
 ```bash
-npx agent-browser screenshot /tmp/portfolio_screenshot.png
+npx agent-browser screenshot /tmp/SITENAME_screenshot.png
 ```
 
 **Take a full-page screenshot:**
 ```bash
-npx agent-browser screenshot --full /tmp/portfolio_full.png
+npx agent-browser screenshot --full /tmp/SITENAME_full.png
 ```
+
+Replace SITENAME with the domain (e.g., `mikematas`, `heystefan`). This prevents file collisions if multiple audits run in parallel.
 
 **Get page structure, text, and links:**
 ```bash
@@ -83,6 +85,8 @@ Then use the Read tool to view any saved screenshot PNGs.
 
 Craft is the #1 thing design leaders look for. Taste, visual quality, attention to detail. If someone shows strong craft — through micro-interactions, a beautifully built site, polished components, considered typography — that's a signal worth reaching out for. Don't keep asking "where's the product work" or "where's the company work." That's for the interview. Judge what's in front of you.
 
+Also remember: you're seeing static screenshots of sites that may be designed as interactive experiences. A homepage with many small visual elements isn't necessarily cluttered — it may be a bento grid where every piece animates, has hover states, or tells a story through interaction. If the individual elements look well-crafted and the overall composition feels intentional, give it the benefit of the doubt. Don't penalize density or unconventional layouts just because they don't match a "big hero image per project" pattern.
+
 ## The Rubric
 
 Score each category 1-5 (1 = failing, 3 = acceptable, 5 = exceptional). Be specific about what you see. No vague praise. If something is bad, say exactly what and why.
@@ -98,6 +102,7 @@ Evaluate:
 - Is whitespace used intentionally or randomly?
 - Does the color palette feel considered?
 - Does the overall craft match the caliber of companies the designer aspires to join?
+- **Quiet confidence counts.** A muted, restrained site can be just as strong as a flashy one. If the typography is nice, the spacing is deliberate, and every element feels intentional, that's a 4 or 5, not a 3. Don't confuse "minimal" with "lacking."
 
 - **Is this a stock template?** If the site is clearly a default Squarespace, Wix, or Framer template with minimal customization, that's a red flag in itself. In 2026 there's no excuse — AI tools make it trivial to have something custom. A stock template signals you're not engaged with the tools or don't care enough to differentiate. Similarly, if the URL is still `yourname.framer.website` or `yourname.squarespace.com` — get a custom domain. It's a small thing but a `.framer.website` URL signals "I didn't finish this."
 
@@ -108,7 +113,7 @@ Failure looks like: inconsistent spacing, random colors, messy typography, gener
 The product should be the hero, not the process behind it. Visitors should see real, high-fidelity work immediately — not bios, not process explanations, not mission statements. This applies to BOTH the homepage AND inside case studies.
 
 Evaluate:
-- Can you see actual design work within the first scroll?
+- Can you see actual design work within the first scroll? This includes bento grids, fragments of real UI, device mockups, and component previews — not just full-screen hero images. If the homepage shows pieces of real product work in any format, that counts.
 - Is it high-fidelity final output, or wireframes and sticky notes?
 - Are there live demos, prototypes, or interactive elements?
 - Does the portfolio lead with outcomes or with process?
@@ -174,9 +179,10 @@ Evaluate:
 - Is there a distinct point of view or design philosophy that comes through?
 - Would you remember this portfolio tomorrow?
 - Are there unexpected details, interactions, or personality?
-- Does it draw inspiration from outside the design echo chamber?
 
-Failure looks like: cookie-cutter Framer template with stock copy. Indistinguishable from 1000 other portfolios. No personality.
+**Important: Restraint and simplicity are valid design choices.** A minimal, clean site with considered typography and intentional whitespace IS a point of view. Don't penalize someone for choosing simplicity over flashiness. Not every portfolio needs animations, illustrations, or surprises to have soul. If the simplicity feels deliberate and confident rather than lazy or default, score it well. And don't split the score — if the copy has strong personality AND the visual design is deliberately restrained, that's a cohesive choice, not a contradiction. Score the whole, not the parts against each other.
+
+Failure looks like: cookie-cutter Framer template with stock copy. Indistinguishable from 1000 other portfolios because it uses a default layout with no thought behind it. NOT failure: a deliberately simple site where the restraint itself is the design decision.
 
 ### 7. PORTFOLIO AS PRODUCT (Weight: Medium)
 
